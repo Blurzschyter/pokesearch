@@ -13,6 +13,7 @@
 		8C8E96B01DF7AE750012EF43 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E96A91DF7AE750012EF43 /* GFGeoHash.m */; };
 		8C8E96B11DF7AE750012EF43 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E96AB1DF7AE750012EF43 /* GFGeoHashQuery.m */; };
 		8C8E96B21DF7AE750012EF43 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E96AD1DF7AE750012EF43 /* GFQuery.m */; };
+		8C8E96BA1DF7F52B0012EF43 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8E96B91DF7F52B0012EF43 /* PokeAnnotation.swift */; };
 		8CB5FA0E1DF7A8B700C005EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB5FA0D1DF7A8B700C005EF /* AppDelegate.swift */; };
 		8CB5FA101DF7A8B700C005EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB5FA0F1DF7A8B700C005EF /* ViewController.swift */; };
 		8CB5FA131DF7A8B700C005EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB5FA111DF7A8B700C005EF /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		8C8E96AC1DF7AE750012EF43 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		8C8E96AD1DF7AE750012EF43 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		8C8E96B61DF7B0E00012EF43 /* PokeSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C8E96B91DF7F52B0012EF43 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		8CB5FA0A1DF7A8B700C005EF /* PokeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB5FA0D1DF7A8B700C005EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CB5FA0F1DF7A8B700C005EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,22 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		8C8E96B71DF7F4EB0012EF43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8CB5FA0F1DF7A8B700C005EF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8C8E96B81DF7F4F10012EF43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C8E96B91DF7F52B0012EF43 /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8CB5FA011DF7A8B700C005EF = {
 			isa = PBXGroup;
 			children = (
@@ -139,15 +157,16 @@
 		8CB5FA0C1DF7A8B700C005EF /* PokeSearch */ = {
 			isa = PBXGroup;
 			children = (
+				8C8E96B81DF7F4F10012EF43 /* Model */,
+				8C8E96B71DF7F4EB0012EF43 /* Controller */,
 				8C8E969C1DF7AE750012EF43 /* GeoFire */,
 				8CB5FA0D1DF7A8B700C005EF /* AppDelegate.swift */,
-				8CB5FA0F1DF7A8B700C005EF /* ViewController.swift */,
-				8CB5FA111DF7A8B700C005EF /* Main.storyboard */,
-				8CB5FA141DF7A8B700C005EF /* Assets.xcassets */,
-				8CB5FA161DF7A8B700C005EF /* LaunchScreen.storyboard */,
+				8C8E96B61DF7B0E00012EF43 /* PokeSearch-Bridging-Header.h */,
 				8CB5FA191DF7A8B700C005EF /* Info.plist */,
 				8CB5FA1F1DF7A9A800C005EF /* GoogleService-Info.plist */,
-				8C8E96B61DF7B0E00012EF43 /* PokeSearch-Bridging-Header.h */,
+				8CB5FA141DF7A8B700C005EF /* Assets.xcassets */,
+				8CB5FA161DF7A8B700C005EF /* LaunchScreen.storyboard */,
+				8CB5FA111DF7A8B700C005EF /* Main.storyboard */,
 			);
 			path = PokeSearch;
 			sourceTree = "<group>";
@@ -278,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8E96AF1DF7AE750012EF43 /* GFBase32Utils.m in Sources */,
+				8C8E96BA1DF7F52B0012EF43 /* PokeAnnotation.swift in Sources */,
 				8CB5FA101DF7A8B700C005EF /* ViewController.swift in Sources */,
 				8C8E96B01DF7AE750012EF43 /* GFGeoHash.m in Sources */,
 				8CB5FA0E1DF7A8B700C005EF /* AppDelegate.swift in Sources */,
